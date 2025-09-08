@@ -5,4 +5,5 @@ metadata:
   namespace: master
 spec:
   url: oci://ghcr.io/steven-streller/charts
+  type: oci
   interval: 10m
