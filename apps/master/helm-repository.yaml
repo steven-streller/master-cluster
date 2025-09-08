@@ -1,0 +1,8 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: HelmRepository
+metadata:
+  name: master-laravel-oci
+  namespace: master
+spec:
+  url: oci://ghcr.io/steven-streller/charts
+  interval: 10m
