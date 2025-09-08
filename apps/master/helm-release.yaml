@@ -1,19 +1,18 @@
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
-  name: master-laravel
+  name: podinfo
   namespace: master
 spec:
+  interval: 10m
   chart:
     spec:
-      chart: master-laravel
+      chart: <name|path>
+      version: '4.0.x'
       sourceRef:
         kind: OCIRepository
-        name: master-laravel-oci
+        name: podinfo
         namespace: master
-      version: "^1.0.0"
-  interval: 5m
+      interval: 10m
   values:
-    nginx:
-      ingress:
-        enabled: false
+    replicaCount: 2
