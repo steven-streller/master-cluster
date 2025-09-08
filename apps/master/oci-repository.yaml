@@ -1,0 +1,13 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: OCIRepository
+metadata:
+  name: master-laravel-oci
+  namespace: master
+spec:
+  interval: 10m
+  url: oci://ghcr.io/steven-streller/charts/master-laravel
+  layerSelector:
+    mediaType: "application/vnd.cncf.helm.chart.content.v1.tar+gzip"
+    operation: copy
+    ref:
+      semver: "^1.0.0"
