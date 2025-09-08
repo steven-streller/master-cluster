@@ -2,7 +2,6 @@ apiVersion: source.toolkit.fluxcd.io/v1
 kind: OCIRepository
 metadata:
   name: podinfo
-  namespace: master
 spec:
   interval: 5m0s
   url: oci://ghcr.io/stefanprodan/charts/podinfo
