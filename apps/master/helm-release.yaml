@@ -12,7 +12,7 @@ spec:
       sourceRef:
         kind: OCIRepository
         name: podinfo
-        namespace: master
+        namespace: flux-system
       interval: 10m
   values:
     replicaCount: 2
