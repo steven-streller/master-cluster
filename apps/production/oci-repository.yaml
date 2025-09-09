@@ -2,7 +2,7 @@ apiVersion: source.toolkit.fluxcd.io/v1
 kind: OCIRepository
 metadata:
   name: master-laravel-oci
-  namespace: master
+  namespace: production
 spec:
   interval: 5m0s
   url: oci://ghcr.io/steven-streller/charts/master-laravel

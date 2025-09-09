@@ -2,7 +2,7 @@ apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
   name: master-laravel
-  namespace: master
+  namespace: production
 spec:
   chartRef:
     kind: OCIRepository
